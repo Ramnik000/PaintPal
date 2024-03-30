@@ -20,3 +20,32 @@
   margin-bottom: auto;
   padding: 50px;
 }
+
+.brush-button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 1px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.eraser-button {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 1px;
+  cursor: pointer;
+  align-items: center;
+}
+

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Menu = ({ setColor, setWidth, setOpacity }) => {
+const Menu = ({ setColor, setWidth, setOpacity}) => {
   return (
     <div className="menu">
       <h5>Brush Settings</h5>
@@ -16,6 +16,7 @@ const Menu = ({ setColor, setWidth, setOpacity }) => {
         <label htmlFor='opacity'>Brush Opacity:</label>
         <input type='range' className="form-control-range" min='1' max='100' onChange={(e) => setOpacity(e.target.value)}></input>
       </div>
+      
     </div>
   );
 }
