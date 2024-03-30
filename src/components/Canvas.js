@@ -19,7 +19,9 @@ const Canvas = ({ color, width, opacity }) => {
   const startDrawing = (e) => {
     const { offsetX, offsetY } = e.nativeEvent;
     ctxRef.current.beginPath();
-    ctxRef.current.moveTo(offsetX, offsetY);
+    ctxRef.current.moveTo(
+      e.nativeEvent.offsetX,
+      e.nativeEvent.offsetY);
     setIsDrawing(true);
   };
 
@@ -30,8 +32,10 @@ const Canvas = ({ color, width, opacity }) => {
 
   const draw = (e) => {
     if (!isDrawing) return;
-    const { offsetX, offsetY } = e.nativeEvent;
-    ctxRef.current.lineTo(offsetX, offsetY);
+    ctxRef.current.lineTo(
+      e.nativeEvent.offsetX,
+      e.nativeEvent.offsetY
+    );
     ctxRef.current.stroke();
   };
 
