@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Menu from "./components/Menu";
+import Canvas from "./components/Canvas";
 
 function App() {
+
+  const [color, setColor]= useState("black");
+  const [width, setWidth]= useState(5);
+  const [opacity, setOpacity]= useState(0.5);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>My Paint Brush</h1>
+      <div className="draw-area">
+      <Menu setColor={setColor}  setWidth={setWidth} setOpacity={setOpacity}/>
+      <Canvas color={color} width={width} opacity={opacity} />
+      </div>
     </div>
   );
 }
