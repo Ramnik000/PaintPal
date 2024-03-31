@@ -48,4 +48,16 @@
   cursor: pointer;
   align-items: center;
 }
+.form-group label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.text-input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
 
